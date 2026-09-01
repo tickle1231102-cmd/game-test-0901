@@ -10,23 +10,64 @@
   <div class="container">
     <h1>핫 앤 콜드: 숨겨진 보물을 찾아라!</h1>
 
+    <div class="meta-panel">
+      <div class="status-item">
+        <span class="label">칭호</span>
+        <span id="title" class="value">견습 탐험가</span>
+      </div>
+      <div class="status-item">
+        <span class="label">콤보</span>
+        <span id="combo" class="value combo">Combo x0</span>
+      </div>
+    </div>
+
     <div class="status-panel">
       <div class="status-item">
+        <span class="label">스테이지</span>
+        <span id="stage" class="value">Lv.1</span>
+      </div>
+      <div class="status-item">
         <span class="label">남은 기회</span>
-        <span id="attempts" class="value">7 / 7회</span>
+        <span id="hearts" class="value hearts"></span>
+      </div>
+      <div class="status-item">
+        <span class="label">보유 골드</span>
+        <span id="gold" class="value gold">0G</span>
       </div>
       <div id="hint" class="hint">게임을 시작하려면 칸을 클릭하세요.</div>
+      <div id="reward" class="reward hidden"></div>
     </div>
 
     <ul class="legend">
       <li><span class="swatch red"></span>매우 뜨거움 (1~2칸 이내)</li>
-      <li><span class="swatch orange"></span>따뜻함 (3~5칸 이내)</li>
-      <li><span class="swatch blue"></span>차가움 (6칸 이상)</li>
+      <li><span class="swatch orange"></span>따뜻함 (3~4칸 이내)</li>
+      <li><span class="swatch blue"></span>차가움 (5칸 이상)</li>
     </ul>
+
+    <div class="skills">
+      <button id="skill-radar" class="skill-btn" data-skill="radar">
+        <span class="skill-name">🔍 레이더 스캔</span>
+        <span class="skill-meta">30G · Lv.1+</span>
+      </button>
+      <button id="skill-line" class="skill-btn" data-skill="lineDetect">
+        <span class="skill-name">📡 행/열 탐지</span>
+        <span class="skill-meta">50G · Lv.2+</span>
+      </button>
+      <button id="skill-refill" class="skill-btn" data-skill="refill">
+        <span class="skill-name">💖 기회 충전</span>
+        <span class="skill-meta">40G · Lv.3+</span>
+      </button>
+    </div>
 
     <div id="board" class="board"></div>
 
-    <button id="reset-btn" class="reset-btn">게임 초기화</button>
+    <div class="controls">
+      <button id="reset-btn" class="reset-btn">다시 시작</button>
+      <button id="next-stage-btn" class="next-btn hidden">다음 스테이지로</button>
+      <button id="dogam-toggle" class="dogam-toggle-btn">📖 보물 도감</button>
+    </div>
+
+    <div id="dogam-panel" class="dogam-panel hidden"></div>
   </div>
 
   <script src="script.js"></script>
