@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>핫 앤 콜드: 숨겨진 보물을 찾아라!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>핫 앤 콜드: 숨겨진 보물을 찾아라!</h1>
+
+    <div class="status-panel">
+      <div class="status-item">
+        <span class="label">남은 기회</span>
+        <span id="attempts" class="value">7 / 7회</span>
+      </div>
+      <div id="hint" class="hint">게임을 시작하려면 칸을 클릭하세요.</div>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <button id="reset-btn" class="reset-btn">게임 초기화</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
