@@ -68,6 +68,46 @@ h1 {
   transition: color 0.25s ease;
 }
 
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 10px 16px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44, 52, 68, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #4a5264;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend .swatch.red {
+  background-color: #ff5252;
+}
+
+.legend .swatch.orange {
+  background-color: #ff9f43;
+}
+
+.legend .swatch.blue {
+  background-color: #4a90e2;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
